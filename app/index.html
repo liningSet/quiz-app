@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="wrapper">
+        <div class="quiz-board">
+            <div class="board-heading">
+                <div class="board-heading-container">
+                    <h1>Quiz App</h1>
+                    <div class="time-board">
+                        <span>Time Left</span>
+                        <div class="time">30</div>
+                    </div>
+                </div>
+                <div class="progress"></div>
+            </div>
+
+            <div class="board-content">
+                <div class="board-content-container">
+
+                    <div class="start-section">
+                        <h1>Welcome</h1>
+                        <p>In this quiz app you will be given a set of questions with four answers each, 
+                            one of them being the true answer, If you're ready let's begin shall we? :)
+                        </p>
+                        <button id="start-btn">Start</button>
+                    </div>
+                    
+                    <!-- there can be as many questions as possible -->
+                    <div class="question" id="q1">
+                        <h1>1. Which one was the first internet search engine?</h1>
+                        <div class="answers-box">
+                            <div class="answer">Google
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer true">Archie
+                                <i class="far fa-check-circle"></i>
+                            </div>
+
+                            <div class="answer">Altavista
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">WAIS
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="question" id="q2">
+                        <h1>2. Which one was the first web browser invented in 1990?</h1>
+                        <div class="answers-box">
+                            <div class="answer">Internet Explorer
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">Mosaic
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">Mozilla
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer true">Nexus
+                                <i class="far fa-check-circle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="question" id="q3">
+                        <h1>3. Firewall in computer is used for?</h1>
+                        <div class="answers-box">
+                            <div class="answer true">Security
+                                <i class="far fa-check-circle"></i>
+                            </div>
+
+                            <div class="answer">Data Transmission
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">Authentication
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">Monitoring
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="question" id="q4">
+                        <h1>4. Which of the following is not an operating system?</h1>
+                        <div class="answers-box">
+                            <div class="answer">Mac
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">DOS
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">Linux
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer true">C
+                                <i class="far fa-check-circle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="question" id="q5">
+                        <h1>5. .gif is an extension of?</h1>
+                        <div class="answers-box">
+                            <div class="answer">Video file
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer true">Image file
+                                <i class="far fa-check-circle"></i>
+                            </div>
+
+                            <div class="answer">Audio file
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                            <div class="answer">Word file
+                                <i class="far fa-times-circle"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="results">
+                        <h1>You had:</h1>
+                        <h1 class="correctanswers">0 <i class="far fa-check-circle"></i></h1>
+                        <h1 class="incorrectanswers">0 <i class="far fa-times-circle"></i></h1>
+                        <h1 class="emptyanswers">0 <i class="far fa-circle"></i></h1>
+                        <h1>answers</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="board-footer">
+                <div class="board-footer-container">
+                    <span class="question-indicator"></span>
+                    <button id="next-btn">Next Que</button>
+                    <button id="again-btn">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/confetti.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
